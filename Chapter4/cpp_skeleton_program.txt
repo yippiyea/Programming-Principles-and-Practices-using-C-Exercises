@@ -1,0 +1,23 @@
+//  Make it Correct
+//  Make it Simple
+//  Make it Efficient
+
+
+//  Purpose/Problem     :   
+//  Requirements        :
+//  UI design           :   input prompt    : 
+//                          output prompt   : 
+//                          error prompt    :
+//  Logic               :
+//  Data design         :
+//  Conclusion          :
+
+#include <iostream>
+#include "utilities.h"
+using namespace std;
+
+int main() {
+    
+    keep_window_alive();
+    return 0;
+}

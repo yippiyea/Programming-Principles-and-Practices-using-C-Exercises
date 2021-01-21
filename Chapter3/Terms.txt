@@ -1,0 +1,19 @@
+assignment  :   is a statement that gives value to a variable
+cin         :   is a stream input operator
+concatenation:  is an addition of strings, or combination of strings
+conversion  :   is a mechanism to convert value to onther type
+declaration :   set a memory space of a given object type
+defenition  :   set a memory space of a given object type and gives it a value
+increment   :   is addition in numeric type
+initialization: is assigning a value to variable for the first time
+name        :   is name
+narrowing   :   is a converion from bigger type to smaller type
+object      :   is some place in memory that contains a value
+operation   :   is your program flow
+operator    :   is one part that make program flow
+type        :   is a unit to differentiate bits in memory
+type safety :   is a operation that doesnt break the rule or doesnt lose value 
+value       :   is bits in memory
+variable    :   is named location in memory in this case : object's name
+
+

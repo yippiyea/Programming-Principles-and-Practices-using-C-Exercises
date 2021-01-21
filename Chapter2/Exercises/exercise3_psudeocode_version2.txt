@@ -1,0 +1,36 @@
+// how to go to school
+
+// scenario : 
+// i was 12th years old 7th grade A
+// i school at SMP Negri 1 Beo
+// my home is at beo
+// suppose we have developed the World, map
+// and the hardware and software
+//---------------------------------------------------
+// psudeo code version 2
+//---------------------------------------------------
+// the steps :
+// 1. get joystick info () / this is the joystick 
+// 2. check building (param building) / 
+// 3. open door ()
+
+/* benefit of this program :
+1. it is dinamic / user can go to what ever he want
+    (but it needs a world)
+2. user navigate in the street
+*/
+
+/* warknesses of this program : 
+1. it needs extra work
+2. we must make a 3D map
+3. we must make the world (home, street, buildings, school)
+4. it is not intended for this exercise
+5. if i do this version, then i dont solve the problem
+
+ */
+
+/*solution ?  
+*/
+
+
+

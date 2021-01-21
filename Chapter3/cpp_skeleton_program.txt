@@ -1,0 +1,17 @@
+//  Purpose/Problem     : 
+//  Requirements        :
+//  UI design           :   input prompt    : 
+//                          output prompt   : 
+//                          error prompt    :
+//  Logic               :
+//  Data design         :
+
+#include <iostream>
+#include "utilities.h"
+using namespace std;
+
+int main() {
+    
+    keep_window_alive();
+    return 0;
+}
