@@ -1,0 +1,62 @@
+1.  What is computation ?
+    computation is ways to tell computer to do something
+    bjarne : act of producing some output based on some input
+2.  What do we mean inputs and outputs to a computation ? Give examples ! 
+    Inputs and outputs to a computation means we insteract with computer. by input we mean   
+    we say something to computer. by output we mean omputer say something to us. give example : 
+        for example i want a computer to display my name;
+    so in this case the input would be my name. and the output that computer would produce is my name also
+    bjarne :    producing output 49 by input 7 of function square()
+3.  1. correctness
+    2. simplicity
+    3. efficieny (readability, maintainability, and reusability)
+4.  Expression helps us to express idea in programming
+    bjarne : expression computes value from number of operands
+5.  a statement is more advance expression. it can consist of many combination of expressions
+    an expression is the most basic building block in programming
+6.  Left value is accessing a value in memory through variable. the operators that requires left value are
+    -   assignment operator, increment decrement operator braecket operator for array. these operators requires
+        left value because we need to access the location in memory
+7.  const expression is a value that cannot be changed thorough the life of application. you cant declare
+    constant expression without initialize it
+8.  literal is a one kind of value that we assign to variable or containers many times
+9.  symbolic constant is a value that cant be changed thorough the life of application once it has been
+    initialized. You can declare symbolic constant without initialize it
+    bjarne : symbolic constant is a constant taht must be given a value at compile time
+            for other kind of constant that you need to work with when the value is not known at compile 
+            time but after initialization the value cannot be changed, use const.
+10. bjarne : magic constant or non obvious literals that you use in your application. avoid magic constant !
+            for example : if (color == "red").   red is magic constant
+                        you better use this :  if (color == "color.red"). in this case color is enum type
+                        and red is the field. 
+11. + - * / % > >= < <= || && ++ -- =
+12. 
+13. + = 
+14. When the condition is constant type
+15. it cant deal with variables type. 
+16. give clarity to the programmer what the loop does. it is executed from declaration of variable,
+    the condition, and the action
+17. Use for loop if we already know how much time to loop. use while loop if we dont know
+    how much time to loop
+18. convert it to int using casting. use type value {} or type value(). curly braces prevents narrowing
+19. it means this function process one int and give char as a return value
+20. when i need to reuse a block of code, i should define a function
+    because duplicate code is one of the most danger and bad programming practice
+    because it makes life easier to debugging 
+    because it makes possible to read large program
+    because it helps other people to use our code
+    because it helps us to learn how to organize program modularly
+21. i can do *,/,%, 
+22. no
+23. 2
+24. e.g v is vector type 
+    for (int i = 0; i < v.size(); ++i)
+    {
+        cout<<"v["i<<"] is "<<v[i]<<endl;
+    }
+25. it declares a container of char named alphabet.. the rest i dont know
+26. it adds elements to the end of vector 
+27. 
+28. because its easy to use. like : we can grow the size of vector at runtime, it has
+    may usefull functions, and it can be created for many primitive types
+29. by using sort function

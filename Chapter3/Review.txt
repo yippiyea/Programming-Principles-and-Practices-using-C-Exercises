@@ -1,0 +1,78 @@
+1.  what is prompt ? Term prompt means the program show a window to convey a message 
+2.  which operator do you use to read into variable ? cin
+3.  if you want the user to input the integer value to your program for a variable named
+    number, what are two lines of code you could write to ask the user to do it and
+    to input the value into your program ? 
+    -   ask user to do          : cout<<"enter an integer number : ";
+    -   input value to program  : cin>>number;
+4.  what is \n called and what purpose does it serve ? 
+    it is called new line maybe (if im right :D)
+    it is designed to give new line to the output character
+5.  what terminates input into string ? (enter character)
+6.  what terminates iput into integer ? (enter character)
+7.  how would you write 
+    cout<<"Hello, ";
+    cout<<first_name;
+    cout<<"!\n";
+    answer  :   cout<<"Hello, "<<first_name<<"!\n";
+8.  what is an object ? 
+    object is some place in memory that contains a value (bits) 
+9.  what is literal ?
+    literal is a value of particular type 
+10. what kinds of literals are there ? 
+    literals of integers, strings, chars, doubles, floats, and booleans
+11. what is variable ? 
+    variable is named location or place in memory that contains value
+12. what are typical sizes for a char, an int, and a double ? 
+    char    :   1 byte
+    integer :   4 bytes
+    double  :   8 bytes
+13. what measures do we use for the size of small entitities in memory, such as ints and strings ? 
+    byte
+14. what is the difference between '=' and '==' ?
+    '=' is used to assign value to a variable 
+    '==' is used to in logical comparison which is equal comparison
+15. what is a defenition ?
+    defenition is a statement where we declare a variable and initialize it for the first terminates
+16. what is an initialization and how does it differs from an assignment ?
+    -   initialization is a statement that gives value to a variable for the first time after it is declared
+    or when it is defined
+    -   it differs from an asignment because it only happened when a variable gets a value first time
+17. what is a string concatenation and how do you make it work in C++ ? 
+    string concatenation is a combined of literal strings or string objects 
+    we make it work in C++ thourg + operator. e.g : 
+    if s1 and s2 is a string type then it will make string concatenation
+    s1 + s2 or "Hello " + "World"
+18. legal names in C++ :
+    -   This_little_pig
+    -   MineMineMine
+    -   the_$12_method
+    -   number
+    -   correct?
+    not legal names and why : 
+    -   latest thing :  because it contains a space
+    -   This_1_is fine :   because it contains a space
+    -   2_For_1_special :   because it starts with number instead of letters
+    -   _this_is_ok :   because it starts whit underscode instead of letters
+19. Give five examples of legal names that you shouldn't use because thay are likely to cause confusion
+    -   correct?
+    -   MineMineMine
+    -   the_$12_method
+    -   PHI
+    -   Price($)
+20. What are some good rules for choosing names ? 
+    -   starts with letters    
+    -   short named
+    -   describe what it serves as a container, e.g :  first_name  : variable to contain a first_name
+    -   follow standard convention
+    -   dont use appropriate symbol except you must
+21. what is type safety and why is it important ? 
+    type safety is whatever operation performed on a type that doesnt break the rule or doesnt lose value when 
+    it is converted to another type
+    it is important because if we lose value then that could lead to bug
+22. why can conversion from double to int be a bad thing ? 
+    because double is bigger than int. if bigger type is converted to a smaller type it could lead to truncated value
+23. Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+    the rule is :   whenever bigger type is converted to smaller type than that is unsafe type conversion
+                    whenever smaller type is converted to bigger type than that is safe type conversion
+

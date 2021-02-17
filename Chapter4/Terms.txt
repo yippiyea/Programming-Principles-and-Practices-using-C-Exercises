@@ -1,0 +1,75 @@
+Abstraction 
+    a technique to achieve 3 main priciples of programming. this technique works by hiding
+    implementation details. and it results just an API
+begin()
+    this is a member function of vector. that does a job to locate the first element in vector
+computation
+    is process producing outputs based on inputs. its performed by computer
+conditinal statement
+    is a statement that promotes logic. it separates or drive program action to different scenario
+declaration
+    this is away we set up a place in memory and name it
+defenition
+    is away we set up a place in memory, name it, and then insert a value into that place
+divide and conquer 
+    this is the second technique to achieve 3 main principles in programming. it works by divide a goal
+    in to a few sub goals or objectives. for example i want to display a list of book title from my library,
+    so i will take the input in this case all of the titles, process it in this case gather all of the inputs,
+    and sorted it, and then output it which is display the output to the user
+else    
+    this is the friend of if statement
+end()
+    it is the member funtion of a vector. it works by locating the last element of a vector
+expression
+    is the most basic building blocks in programming
+for-statement
+    is a statement that we can use to repeat actions for a number of times. we use for statement of we know
+    how much time we loop. if not we use while statement
+range-for-statement
+    range-for-statement is usefull for read the contents of vector or container. it has an optimized code for it
+function
+    is accumulated a bunch of expression, expression statements, or statements into one location. 
+    and if we want to refer to those block of statements we just call the function
+    so function is a way we structure a program
+if-statement
+    is a conditional statement that works like brain of a program
+increment
+    increment is an oparator. it works by adding one more value into a variable
+input
+    input is the source of data entered to computer to be processed
+iteration
+    iteration is statement that works by repeating action to the certain amount of times or while   
+    the condition is true
+loop
+    loop is a repeated actions
+lvalue
+    lvalue is left value when we make expression. it works by accessing the value in memory location. it is
+    oftenly used to modify a value in that variable
+member function
+    is a function that resides in an object. so it is actually an object's member function. it is oftenly
+    called method
+output
+    output is the the data that has been processed by computer
+push_back()
+    is a member function of vector container. it works by adding data after last element in the container
+repetition
+    is action that is repeated again and again
+rvalue
+    is an expression that is oftenly used to access the value in a variable
+selection
+    is a statement that drives the program flow by the logic condition
+size()
+    is a member function of vector container. and it works by get the number of elements in container
+sort()
+    is standard function that works by sorting all of unordered elements in container and sort it on appropriate 
+    form. for example ascending or descending
+statement
+    is a collection of expression. 
+switch-statement 
+    is similar to an if-statement. but it is commonly used of the conditions is constant, enumeration
+    or not a variable.
+vector
+    is a container that can grow dinamycally its size
+while statement
+    is a statement that works by repeating actions while the condition is true.
+

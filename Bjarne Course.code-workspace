@@ -1,0 +1,15 @@
+{
+    "folders": [
+		{
+			"path": "Chapter1"
+		},
+		{
+			"path": "Chapter2"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}

@@ -1,0 +1,26 @@
+c++ configuration ui
+
+ctrl + shift + e    :   select current file in workspaec
+ctrl + `            :   open terminal
+
+ctrl + d            :   select current word
+ctrl + alt + down   :   select same word down direction
+ctrl + alt + up     :   select same word up direction
+ctrl + shit + l     :   select same word in current file
+hold shift + alt    :   column box selection
+
+SHRINK + EXPAND
+shift + alt + left  
+shift + alt + right
+
+FIND & REPLACE
+ctrl + f            :   search target word in the file
+enter               :   navigate forward
+shift + enter       :   navigate backward
+
+SEARCH ACROSS FILE
+ctrl + shift + file :   search in current folder
+
+FOLDING
+ctrl + shift + [    :   fold innermost
+ctrl + shift + ]    :   unfold collapsed region at the cursor

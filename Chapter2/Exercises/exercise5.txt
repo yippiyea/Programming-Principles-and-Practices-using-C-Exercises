@@ -1,0 +1,115 @@
+write defenition of each of these terms
+//
+<<
+C++
+comment
+compiler
+compile-time-error
+cout
+executable
+function
+header
+IDE
+#include
+library
+linker
+main()
+object code
+output
+program
+source code
+statement
+
+my answer-----------------------------------------------------------
+//
+    one line comment
+<<
+    cout operator
+C++
+    this is c++ language 
+comment
+    a piece of code that is not considered by compiler
+compiler
+    a program that translates your code to machine code
+compile-time-error
+    is an error that is found when you compile your source code
+cout
+    is a function maybe, or a method that is responsible to output a stream
+    of bytes or characters
+executable
+    is an object file of your appplication. it consist of your source code
+    and other codes from libraries written by other programmers
+function
+    is a way to grouping a set of instructions based on its purpose
+header
+    is a file that is used to write declaration of functions, variable
+    and write also funciton defenition
+IDE
+    is a complete environment where you do programming. it provides 
+    essence tools and resources that you will need to write code. 
+    for example : there are debugger, compiler, editor, unit testing
+    etcs
+#include
+    is a prepocessor directives that is used to take other libraries 
+    into your project
+library
+    is a collections of code that serves as a fondation or resources and
+    tools to help you finish your project
+linker
+    is program that is responsible to link other libraries to your
+    source code
+main()
+    is starting poin of every program written in c++ or c
+object code
+    is the code that can be read by machine
+output
+    is the result displayed of your program
+program
+    is the result of your project
+source code
+    is the code that you write
+statement
+    one of building blocks of c++ program. statements is used to 
+    express your thought.
+
+
+
+bjarne answer-----------------------------------------------------------
+//
+    is a comment
+<<
+    output operator  
+C++
+    is compiled language
+comment
+    
+compiler
+    a program that translates Human readable code into machine can 
+    understand
+compile-time-error
+    errors found by compiler
+cout
+    standard output stream.  character put out into cout using the 
+    operator << will appear on the screen
+executable
+    what computer can execute
+function
+
+header
+IDE
+#include
+library
+    is simply some code usually written by others
+linker
+    link translation unit(seperate parts or libraries) object code
+    to your object code
+main()
+    Execution starting point of C++ Program
+object code
+    what computer can execute
+output
+program
+source code
+statement
+    a part of C++ program that specifies an action and isn't an #include
+    directive (or some other prepocessor directive)
