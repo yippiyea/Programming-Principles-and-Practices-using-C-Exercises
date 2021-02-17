@@ -3,37 +3,15 @@
 //  Make it Efficient
 
 
-//  Purpose/Problem     :   find all prime numbers from 1 to 100 using method "Sieve of Eratosthenes"
+//  Purpose/Problem     :   modify the previous program to take an input value max and then the program should
+//                          find all the primes from 1 to max
 //  Requirements        :
-//  UI design           :   input prompt    : - 
-//                          output prompt   : Display prime numbers from 1 to 100
+//  UI design           :   input prompt    : enter max number : 
+//                          output prompt   : the prime numbers from 1 to max are : 
 //                          error prompt    :
-//  Logic               : 
-//  1. generate list of integers from 2 to 30
-//      - vector of 30 elements
-//  2. choose the first number in the list 
-//  3. cross every 2 multiplies in the list
-//      - vector of 30 elements (to be used to cross the numbers)
-//  4. chhose the next number (not crossed) which is 3
-//  5. cross every 3 multiplies in the list
-//  6. choose the next number (not crossed) which is 5
-//  7. cross ecery 5 multiplies in the list
-//  8. choose the next number (not crossed) which is 7
-//  9. if (there is no cross action anymore then finish the loop)
-
+//  Logic               :
 //  Data design         :
-//  1. vector of 30 elements
-//  2. vector of 30 elements (to be used to cross the numbers)
-//
-//
-//
-//
-
 //  Conclusion          :
-//  wait.. this is crazy program..  its hard to maintain... how can i make it simple ? 
-//  to be continued tomorrow
-
-
 
 #include <iostream>
 #include "../utilities.h"
@@ -101,16 +79,16 @@ inline vector<char> cross_every_multiplies(vector<int> n, vector<char> cn, size_
         {
             cn[i] = 'x';
             ++countcrossing;
-            cout<<"CROSSING AT index["<<i<<"] ---- "; 
+            // cout<<"CROSSING AT index["<<i<<"] ---- "; 
         }
-        cout<<"n["<<i<<"] \t is "<<n[i]<< "and is "<<cn[i]<<endl;
+        // cout<<"n["<<i<<"] \t is "<<n[i]<< "and is "<<cn[i]<<endl;
     }
 
-    cout<<"CROSSING ["<<countcrossing<<"] TIMES"<<endl;
+    // cout<<"CROSSING ["<<countcrossing<<"] TIMES"<<endl;
     if (countcrossing < 1) 
     {
         iscrossing = false;
-        cout<<"YEAAAHHH WE MADE IT"<<endl;
+        // cout<<"YEAAAHHH WE MADE IT"<<endl;
     }
     else
     {
@@ -124,7 +102,7 @@ inline void crossed_or_not(vector <int> n, vector <char> cn)
 {
     for (size_t i = 0; i < n.size(); i++)
     {
-        cout<<"number["<<i<<"] is "<<n[i]<<"\t\t status : "<<cn[i]<<endl;
+        // cout<<"number["<<i<<"] is "<<n[i]<<"\t\t status : "<<cn[i]<<endl;
     }
     
 }
@@ -135,7 +113,7 @@ inline void print_prime_numbers(vector<int> n, vector<char> cn)
     {
         if (cn[i] == 'p' || cn[i] == 'o')
         {
-            cout<<"n["<<i<<" is "<< n[i] <<endl;
+            // cout<<"n["<<i<<" is "<< n[i] <<endl;
         }
     }
     
@@ -148,7 +126,7 @@ inline vector<int> resetindexvector(vector<int> source)
 
     for (size_t i = 0; i < source.size(); i++)
     {
-        cout<<"source : "<<i<<endl;
+        // cout<<"source : "<<i<<endl;
     }
     
 }
@@ -183,8 +161,17 @@ int main() {
     // to keep status of crossing action
     bool iscrossing = true;
 
+
+    size_t max_number = 0;
+
+    // prompt user input
+    cout<<"Enter max number of prime : ";
+    cin>>max_number;
+
+    // output value
+
     // generate list of numbers
-    numbers = generate_list_of_numbers(30);
+    numbers = generate_list_of_numbers(max_number);
     crossednumbers = generate_list_of_crossed(numbers.size());
     
     // // print_vector_int(numbers);
@@ -193,65 +180,20 @@ int main() {
         indexnow = check_next_not_crossed(numbers, crossednumbers);
         crossednumbers = cross_every_multiplies(numbers, crossednumbers, numbers[indexnow], indexnow, iscrossing);
     }
-        print_prime_numbers(numbers, crossednumbers);    
     
-
     vector<int> primenumbers = getPrimeNUmbers(numbers, crossednumbers);
-    print_vector_int(primenumbers);
-    
+
+
     if (isprimes(primenumbers))
     {
         cout<<"The numbers are primes"<<endl;
     }
     else
     {
-        cout<<"The numbers are no primes"<<endl;
+        cout<<"The numbers are not primes"<<endl;
     }
-    
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // //  2. choose the first number in the list     
-    // indexnow = check_next_not_crossed(numbers, crossednumbers);
-    // cout<<"index is "<<indexnow<<"    val is "<<numbers[indexnow]<<endl;
-
-    // //  3. cross every 2 multiplies in the list
-    // crossednumbers = cross_every_multiplies(numbers, crossednumbers, numbers[indexnow], indexnow, iscrossing );
-    // crossed_or_not(numbers, crossednumbers);
-
-    // // //  4. chhose the next number (not crossed) which is 3
-    // indexnow = check_next_not_crossed(numbers, crossednumbers);
-    // cout<<"index is "<<indexnow<<"    val is "<<numbers[indexnow]<<endl;
-
-    // //  5. cross every 3 multiplies in the list
-    // crossednumbers = cross_every_multiplies(numbers, crossednumbers, numbers[indexnow], indexnow, iscrossing);
-    // crossed_or_not(numbers, crossednumbers);
-
-    // //  6. choose the next number (not crossed) which is 5
-    // indexnow = check_next_not_crossed(numbers, crossednumbers);
-    // cout<<"index is "<<indexnow<<"    val is "<<numbers[indexnow]<<endl;
-
-    // //  7. cross ecery 5 multiplies in the list
-    // crossednumbers = cross_every_multiplies(numbers, crossednumbers, numbers[indexnow], indexnow, iscrossing);
-    // crossed_or_not(numbers, crossednumbers);
-
-    // //  8. choose the next number (not crossed) which is 7
-    // indexnow = check_next_not_crossed(numbers, crossednumbers);
-    // cout<<"index is "<<indexnow<<"    val is "<<numbers[indexnow]<<endl;
-
-    // //  9. if (there is no cross action anymore then finish the loop)
-    // crossednumbers = cross_every_multiplies(numbers, crossednumbers, numbers[indexnow], indexnow, iscrossing);
-    // crossed_or_not(numbers, crossednumbers);
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-    // print_prime_numbers(numbers, crossednumbers);
-    
-    printline("Display prime numbers from 1 to 100");
+    print_vector_int(primenumbers);
 
     keep_window_alive();
     return 0;
