@@ -17,25 +17,7 @@
 
 // find the mode
 
-/* 
 
-mode algortihm
-	create distinct number
-		createDistincNumber (randomnumber) return drn
-	set up map towards drn
-		setUpMappin(drn) maybe passing a reference
-	count the mode 
-		countTheMode(mapping, randomnumber) return mapping or maybe pass a reference of map
-	count the max mode 
-		copy mapping value to distinc values
-			copymapValueToDistincValue(mapping, distinct_values)
-		count the max
-			getMax(distinc_values) return max
-	get the key of max value
-		getHowManyMode(mapping, max) return array of mode 
-	
-    
-*/
     
 
 #include <iostream>
@@ -43,6 +25,50 @@ mode algortihm
 #include <utility>
 #include "../utilities.h"
 using namespace std;
+
+
+
+// output will be just
+    // findMode(randomnumber)  e.g 1,4,3,5,6,4,3,2 will display : 3 and 4
+
+// user provides 
+    // random number
+    // drn variable
+
+// mode algortihm
+// 	create distinct number
+// 		createDistincNumber (randomnumber) return drn
+inline vector<int> createDistincNumber(vector<int> randomnumber);
+
+// 	set up map towards drn (this is utility function for findMode)
+// 		setUpMappin(drn) maybe passing a reference
+// i will prove map first and the pointer, 
+// then i will make the drn become key of map
+// mode is out mapping
+inline void setUpMapping(vector<int> drn,  unordered_map <int, int> * pmode);
+
+// 	count the mode 
+// 	countTheMode(mapping, randomnumber) return mapping or maybe pass a reference of map
+// it will loop each key of map towards randomnumber, if it finds the same
+// increment the current value
+inline void countTheMode(vector<int> randomnumbers, unordered_map <int, int> * pmode);
+
+// 	count the max mode 
+// 		copy mapping value to distinc values
+// 			copymapValueToDistincValue(mapping, distinct_values)
+//  it return distinc_value vector, so save it to vector distinc_values
+inline vector<int> copyMapValueToDistincValue(unordered_map <int, int> * pmode);
+
+// 		count the max
+// 			getMax(distinc_values) return max
+inline int getMax(vector<int> distinc_value);
+
+// 	get the key of max value
+// 		getHowManyMode(mapping, max) return array of mode 
+inline void getHowManyMode(int max, unordered_map <int, int> * pmode);
+	
+  
+
 
 int main() {  
 
