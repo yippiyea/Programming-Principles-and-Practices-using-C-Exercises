@@ -52,6 +52,7 @@ int main() {
 
         if (num == '|') break;
         //  step 2  search for the lowest value
+        // save the first input number
         if (values.size() < 1)
         {
             values.push_back(num);
@@ -84,7 +85,7 @@ int main() {
         }
         
         
-        print_vector(values);
+        // print_vector(values);
         cout<<"----------------------------------------------------------"<<endl;
         cout<<"enter a value : ";
     }
